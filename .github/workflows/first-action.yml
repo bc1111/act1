@@ -10,3 +10,15 @@ jobs:
           echo "User checking output"
       - name: Print another line
         run: echo "Have a great day!"
+      - name: Get code
+        uses: actions/checkout@v3
+      - name: Install NodeJS
+        uses: actions/setup-node@v3
+        with: 
+          node-version: '18'
+      - name: Install dependencies
+        run: npm ci
+      - name: Run tests
+        run: npm test
+
+
