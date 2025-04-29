@@ -1,7 +1,7 @@
 name: First Workflow
 on: workflow_dispatch
 jobs:
-  first-job:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Print greetings
@@ -20,5 +20,13 @@ jobs:
       #   run: npm ci
       - name: Run tests
         run: npm test
+  deploy:
+      runs-on: ubuntu-latest
+      steps:
+         - name: Print greetings
+            run: |
+              echo "hi!"
+              echo "User checking output"
+
 
 
