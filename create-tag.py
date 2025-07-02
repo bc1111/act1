@@ -1,5 +1,4 @@
-
-#!/usr/bin/env python3
+#!usr/bin/env python3
 """
 This script finds AWS resources in a specific region using AWS Resource Explorer and creates a CSV file for the tagging plan based on the tagging rules defined in the input CSV file.
  
